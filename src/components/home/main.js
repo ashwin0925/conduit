@@ -26,38 +26,64 @@ class Main extends React.Component {
 
   render() {
     console.log(this.state.articles && this.state.articles)
-    return <div className="wrapper">
-      <div className=" home_main_border">
-        <h3 className="home_main_feed">Global Feed</h3>
-      </div>
-      {this.state.articles && this.state.articles.map(article => {
-        return <>
-          <div className="nav-bar flex-between wrapper">
-            <div className="home_main_image">
-              <img className="home_main_pic" src={article.author.image ? article.author.image : "https://static.productionready.io/images/smiley-cyrus.jpg"} alt="profile" />
-              <div>
-                <NavLink to="/" className="home_main_title">{article.author.username}</NavLink>
-                <h2 className="home_main_read-more">{new Date(article.createdAt).toDateString()}</h2>
+    return this.state.articles ? (
+      <>
+        <div className="wrapper">
+          <div className="home_main_flex">
+            <div className="flex-item">
+              <div className=" home_main_border">
+                <h3 className="home_main_feed">Global Feed</h3>
               </div>
+              {this.state.articles && this.state.articles.map(article => {
+                return <>
+                  <div className="nav-bar flex-between wrapper">
+                    <div className="home_main_image">
+                      <img className="home_main_pic" src={article.author.image ? article.author.image : "https://static.productionready.io/images/smiley-cyrus.jpg"} alt="profile" />
+                      <div>
+                        <NavLink to="/" className="home_main_title">{article.author.username}</NavLink>
+                        <h2 className="home_main_read-more">{new Date(article.createdAt).toDateString()}</h2>
+                      </div>
 
+                    </div>
+                    <ul className="flex-between">
+                      <div className="home_main_fav">
+                        <h3 className="nav-bar__menu-item home_main_heart">
+                          <a className="home_heart"><i class="fas fa-heart"></i></a>{article.favoritesCount}</h3>
+                      </div>
+                    </ul>
+                  </div>
+                  <Link to={`/article/${article.slug}`}>
+                    <h1 className="home_main_name">{article.title}</h1>
+                    <h2 className="home_main_subname">{article.description}</h2>
+                    <h2 className="home_main_read-more">Read More...</h2>  </Link>
+                  <div className="home_main_border border_2"> </div>
+                </>
+
+              })
+              }
             </div>
-            <ul className="flex-between">
-              <div className="home_main_fav">
-                <h3 className="nav-bar__menu-item home_main_heart">
-                  <a className="home_heart"><i class="fas fa-heart"></i></a>{article.favoritesCount}</h3>
+            <div className="home_main-item">
+              <div className="home-main-tags">
+                <h2 className="tag_heading">Popular Tags</h2>
+                {
+                  this.state.tags && this.state.tags.map(tag => {
+                    return <>
+                      <span className="home_main_tag">{tag}</span>
+                    </>
+                  })
+                }
               </div>
-            </ul>
+            </div>
           </div>
-          <Link to={`/article/${article.slug}`}>
-            <h1 className="home_main_name">{article.title}</h1>
-            <h2 className="home_main_subname">{article.description}</h2>
-            <h2 className="home_main_read-more">Read More...</h2>  </Link>
-          <div className="home_main_border border_2"> </div>
-        </>
+        </div>
+      </>
 
-      })
-      }
-    </div>
+
+    ) : (
+        <Spinner />
+
+      )
+
   }
 
 }
