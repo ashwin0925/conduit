@@ -42,13 +42,16 @@ class Main extends React.Component {
 
             </div>
             <ul className="flex-between">
-              <h3 className="nav-bar__menu-item">1</h3>
+              <div className="home_main_fav">
+                <h3 className="nav-bar__menu-item home_main_heart">
+                  <a className="home_heart"><i class="fas fa-heart"></i></a>{article.favoritesCount}</h3>
+              </div>
             </ul>
           </div>
           <Link to={`/article/${article.slug}`}>
-            <h1 className="home_main_name">{article.title}</h1> </Link>
-          <h2 className="home_main_subname">{article.description}</h2>
-          <h2 className="home_main_read-more">Read More...</h2>
+            <h1 className="home_main_name">{article.title}</h1>
+            <h2 className="home_main_subname">{article.description}</h2>
+            <h2 className="home_main_read-more">Read More...</h2>  </Link>
           <div className="home_main_border border_2"> </div>
         </>
 
@@ -66,6 +69,26 @@ export default Main
 
 
 
+// return this.state.articles ? (
+//   <>
+//     <h2>Articles</h2>
+//     <ul>{
+//       this.state.articles && this.state.articles.map(article => {
+//         return <li>{article.title}</li>
+//       })
+//     }
+//     </ul>
+//     <h2>Tags</h2>
+//     <ul>{
+//       this.state.tags && this.state.tags.map(tag => {
+//         return <li>{tag}</li>
+//       })
+//     }
+//     </ul>
+//   </>
+// ) : (
+//     <Spinner />
+//   )
 
 
 

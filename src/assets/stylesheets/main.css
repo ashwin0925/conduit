@@ -296,6 +296,30 @@ input:focus {
   font-size: 1.2rem;
 }
 
+.home_main_fav {
+  padding: 0.1rem 0.5rem;
+  border: 1px solid #5cb85c;
+  border-radius: 0.18rem;
+}
+
+.home_main_fav:hover {
+  background: #5cb85c;
+}
+
+.home_main_heart {
+  margin-left: 0rem;
+  color: #5cb85c;
+  font-size: 0.9rem;
+}
+.home_main_heart:hover {
+  color: white;
+}
+
+.home_heart {
+  margin-right: 0.2rem;
+  font-size: 0.8rem;
+}
+
 .home_main_name {
   margin: 0.5rem 0rem 0rem 0rem;
   font-size: 1.6rem;
