@@ -299,9 +299,48 @@ input:focus {
 .home_main_name {
   margin: 0.5rem 0rem 0rem 0rem;
   font-size: 1.6rem;
+  margin: 1rem 0rem 0.4rem 0;
+  color: black;
 }
 
 .home_main_subname {
   font-size: 1rem;
   color: #bdbdbd;
+  margin-bottom: 1.3rem;
+}
+
+.home_main_read-more {
+  font-size: 0.75rem;
+  color: #bdbdbd;
+}
+.border_2 {
+  margin-top: 1.4rem;
+}
+
+/* Article Page */
+
+.article_page {
+  background: #333333;
+  width: 100%;
+  height: 10.5rem;
+  color: white;
+}
+
+.article_title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  padding-top: 1.2rem;
+}
+
+.home_subheading {
+  font-size: 1.4rem;
+}
+
+.index_title {
+  color: white;
+}
+
+.article_description {
+  font-size: 1.2rem;
+  margin-top: 2rem;
 }
