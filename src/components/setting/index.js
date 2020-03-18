@@ -12,24 +12,27 @@ class Setting extends React.Component {
         <form className="login_form">
 
           <div>
-            <input className="login_input_email" type="text" placeholder="ashwin" />
+            <input className="login_input_email setting_url" type="text" placeholder="URL of profile picture" />
           </div>
 
           <div>
-            <input className="login_input_email" type="text" placeholder="ashwin" />
+            <input className="login_input_email setting_username" type="text" placeholder="ashwin" />
           </div>
           <div>
-            <textarea />
+            <textarea className="newpost_textarea setting_textarea" placeholder="Short bio about you" />
           </div>
           <div>
-            <input className="login_input_email" type="text" placeholder="ash@gmail.com" />
+            <input className="login_input_email setting_username" type="text" placeholder="ash@gmail.com" />
           </div>
           <div>
-            <input className="login_input_email" type="text" placeholder="......." />
+            <input className="login_input_email setting_username" type="text" placeholder="......." />
           </div>
-          <button type="submit" className="login_btn">Update Setting</button>
+          <button type="submit" className="login_btn setting_btn">Update Settings</button>
         </form>
-        <button type="submit" className="login_btn">Logout</button>
+        <div className="setting_border">
+        </div>
+
+        <button type="submit" className="login_btn setting_logout_btn">or click here to logout.</button>
 
       </>
     )

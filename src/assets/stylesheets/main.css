@@ -425,18 +425,22 @@ input:focus {
 
 .newpost_title {
   margin-top: 2rem;
-  width: 60rem;
+  width: 58rem;
+}
+
+::placeholder {
+  color: #818a91;
 }
 
 .newpost_about {
-  width: 60rem;
+  width: 58rem;
   height: 2.2rem;
   font-size: 0.9rem;
 }
 
 .newpost_textarea {
-  width: 60rem;
-  height: 12rem;
+  width: 58rem;
+  height: 11rem;
   border-radius: 0.2rem;
   padding: 1rem;
   border: 0.06rem solid #bdbdbd;
@@ -452,28 +456,95 @@ textarea:focus {
   font-size: 1.2rem;
   width: 10rem;
   height: 3rem;
-  margin-left: 50rem;
+  margin-left: 48rem;
 }
 
+/* Setting Page */
+
+.setting_url {
+  height: 2.3rem;
+  width: 34.5rem;
+  font-size: 0.9rem;
+}
+
+.setting_username {
+  width: 34.5rem;
+}
+
+.setting_textarea {
+  width: 34.5rem;
+}
+
+.setting_btn {
+  width: 10rem;
+  margin-left: 24.6rem;
+  margin-bottom: 1rem;
+}
+
+.setting_border {
+  margin: 0px auto;
+  border-bottom: 0.06rem solid #bdbdbd;
+  width: 34.5rem;
+}
+
+.setting_logout_btn {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 11.6rem;
+  height: 2.4rem;
+  border: 1px solid #b85c5c;
+  background: white;
+  color: #b85c5c;
+}
+
+.setting_logout_btn:hover {
+  background: #b85c5c;
+  color: white;
+}
 /* Profile Page */
 
 .profile_image {
-  width: 5rem;
-  height: 5rem;
+  width: 6.2rem;
+  height: 6.2rem;
   border-radius: 50%;
 }
 
 .profile_hero {
   background: #f3f3f3;
-  height: 14rem;
+  height: 14.5rem;
   padding: 2.7rem;
 }
 
 .profile_name {
   color: black;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .profile_articles {
-  margin-right: 1rem;
+  margin-right: 1.5em;
+  font-size: 1.13rem;
+}
+.profile_btn {
+  border: 1px solid #959595;
+  border-radius: 0.18rem;
+  height: 1.6rem;
+  width: 9rem;
+  background: #f3f3f3;
+  color: #959595;
+  margin-left: 60%;
+}
+
+.profile_btn:hover {
+  background: #dadada;
+}
+
+.wrapper_profile {
+  max-width: 930px;
+  margin-top: 2rem;
+}
+
+.profile_border {
+  width: 71%;
+  padding-top: 0.5rem;
 }

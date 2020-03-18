@@ -1,5 +1,4 @@
 import React from "react"
-import Header from "../common/header"
 import "../../assets/stylesheets/main.css"
 
 

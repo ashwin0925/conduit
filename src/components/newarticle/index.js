@@ -1,4 +1,6 @@
 import React from "react"
+import "../../assets/stylesheets/main.css"
+
 
 class Newpost extends React.Component {
   constructor() {

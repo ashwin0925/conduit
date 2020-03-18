@@ -12,16 +12,17 @@ const Header = (props) => {
           <NavLink to="/" className="logo" href="#"><h1>conduit</h1></NavLink>
           {props.isLoggedIn ? (<ul className="flex-between">
 
-            <NavLink activeClassName="selected" to="/" className="nav-bar__menu-item">Home</NavLink>
+            <NavLink to="/" className="nav-bar__menu-item">Home</NavLink>
 
-            <NavLink to="/login" className="nav-bar__menu-item">New Post</NavLink>
+            <NavLink to="/newpost" className="nav-bar__menu-item">New Post</NavLink>
 
-            <NavLink to="/signup" className="nav-bar__menu-item">Settings</NavLink>
+            <NavLink to="/setting" className="nav-bar__menu-item">Settings</NavLink>
 
-            <NavLink to="/signup" className="nav-bar__menu-item">Profile</NavLink>
+            <NavLink to="/profile" className="nav-bar__menu-item">Profile</NavLink>
+
           </ul>) : (<ul className="flex-between">
 
-            <NavLink activeClassName="selected" to="/" className="nav-bar__menu-item">Home</NavLink>
+            <NavLink to="/" className="nav-bar__menu-item">Home</NavLink>
 
             <NavLink to="/login" className="nav-bar__menu-item">Sign in</NavLink>
 
