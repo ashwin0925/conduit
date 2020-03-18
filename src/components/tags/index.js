@@ -16,7 +16,7 @@ class Tag extends React.Component {
     })
   }
   render() {
-    return this.state.articles ? (
+    return (
       <div>
         <Hero />
         <div>
@@ -62,9 +62,7 @@ class Tag extends React.Component {
           }
         </div>
       </div>
-    ) : (
-        <Spinner />
-      )
+    )
   };
 }
 

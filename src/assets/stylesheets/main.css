@@ -420,3 +420,60 @@ input:focus {
   font-size: 1.2rem;
   width: 7%;
 }
+
+/* New Post Page */
+
+.newpost_title {
+  margin-top: 2rem;
+  width: 60rem;
+}
+
+.newpost_about {
+  width: 60rem;
+  height: 2.2rem;
+  font-size: 0.9rem;
+}
+
+.newpost_textarea {
+  width: 60rem;
+  height: 12rem;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  border: 0.06rem solid #bdbdbd;
+  margin-bottom: 1rem;
+}
+
+textarea:focus {
+  border-radius: 0.18rem;
+  border: 0.06rem solid #188bff;
+}
+
+.newpost_btn {
+  font-size: 1.2rem;
+  width: 10rem;
+  height: 3rem;
+  margin-left: 50rem;
+}
+
+/* Profile Page */
+
+.profile_image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.profile_hero {
+  background: #f3f3f3;
+  height: 14rem;
+  padding: 2.7rem;
+}
+
+.profile_name {
+  color: black;
+  font-size: 2rem;
+}
+
+.profile_articles {
+  margin-right: 1rem;
+}

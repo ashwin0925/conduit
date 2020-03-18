@@ -19,7 +19,6 @@ class Article extends React.Component {
   render() {
     return this.state.articleInfo ? (
       <>
-        <Header />
         {/* {this.state.articleInfo && this.state.articleInfo.map(article => {
           return <>
             <h1>{article.title}</h1>

@@ -10,7 +10,6 @@ class Hero extends React.Component {
   render() {
     return (
       <div>
-        <Header />
         <div className="home_hero">
           <h1 className="home_heading">conduit</h1>
           <h2 className="home_subheading">A place to share your knowledge.</h2>
