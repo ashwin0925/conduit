@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "../common/header.js"
 import "../../assets/stylesheets/main.css"
+import Spinner from "../common/spinner"
 
 
 class Article extends React.Component {
@@ -16,7 +17,7 @@ class Article extends React.Component {
     });
   }
   render() {
-    return (
+    return this.state.articleInfo ? (
       <>
         <Header />
         {/* {this.state.articleInfo && this.state.articleInfo.map(article => {
@@ -42,7 +43,9 @@ class Article extends React.Component {
         <h2 className="article_description wrapper">{this.state.articleInfo && this.state.articleInfo.description}</h2>
 
       </>
-    );
+    ) : (
+        <Spinner />
+      )
   };
 }
 

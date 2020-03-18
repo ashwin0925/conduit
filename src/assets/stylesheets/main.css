@@ -276,9 +276,10 @@ input:focus {
 .home_main_feed {
   padding-left: 0.75rem;
   color: #5cb85c;
-  font-size: 1.2rem;
+  font-size: 0.97rem;
+  font-weight: 600;
   border-bottom: 0.094rem solid #5cb85c;
-  width: 11%;
+  width: 12.6%;
 }
 .home_main_image {
   display: inline-flex;
@@ -350,11 +351,10 @@ input:focus {
 
 .flex-item {
   /* flex: auto; */
-  width: 1100px;
+  width: 100%;
 }
 
 .home_main-item {
-  /* width: 8rem; */
   margin-left: 2rem;
   margin-top: 2rem;
 }
@@ -369,18 +369,21 @@ input:focus {
 }
 
 .tag_heading {
-  font-size: 1.104rem;
-  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
 }
 
 .home_main_tag {
   display: inline-block;
   padding: 0.2rem 0.4rem;
-  border-radius: 3.1rem;
+  border-radius: 0.9rem;
   color: white;
   background: #818a91;
-  font-size: 0.85rem;
-  margin: 0.1rem;
+  font-size: 0.8rem;
+  margin: 0.2rem;
+}
+.main_tag-color {
+  color: white;
 }
 
 /* Article Page */
@@ -409,4 +412,11 @@ input:focus {
 .article_description {
   font-size: 1.2rem;
   margin-top: 2rem;
+}
+
+/* Tags */
+
+.tags_heading {
+  font-size: 1.2rem;
+  width: 7%;
 }

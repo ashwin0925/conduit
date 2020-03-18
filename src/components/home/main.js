@@ -68,7 +68,7 @@ class Main extends React.Component {
                 {
                   this.state.tags && this.state.tags.map(tag => {
                     return <>
-                      <span className="home_main_tag">{tag}</span>
+                      <span className="home_main_tag"> <Link className="main_tag-color" to={`/tags/${tag}`}>{tag}</Link> </span>
                     </>
                   })
                 }

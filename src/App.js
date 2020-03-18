@@ -5,6 +5,7 @@ import Home from "./components/home/index"
 import Login from "./components/login/index"
 import Signup from './components/signup';
 import Article from './components/article';
+import Tag from './components/tags'
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Route path="/login" component={Login} />
       <Route path="/signup" component={Signup} />
       <Route path="/article/:slug" component={Article} />
+      <Route path="/tags/:name" component={Tag} />
+
 
     </>
   );
