@@ -23,18 +23,17 @@ const Login = (props) => {
       })
 
     }).then(res => res.json())
-      .then(user => {
-        if (user.errors) {
-          localStorage.setItem('isLoggedIn', false);
+      .then(userInfo => {
+        if (userInfo.errors) {
+          console.log(userInfo, "in err");
         } else {
-          localStorage.setItem('isLoggedIn', true);
           props.history.push("/");
           props.updateIsLoggedIn(true);
+          localStorage.setItem('conduit-token', userInfo.user.token)
         }
       }).catch(err => {
         console.log(err);
-
-      })
+      });
   }
 
   return (

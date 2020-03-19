@@ -25,7 +25,6 @@ class Main extends React.Component {
   }
 
   render() {
-    console.log(this.state.articles && this.state.articles)
     return this.state.articles ? (
       <>
         <div className="wrapper">

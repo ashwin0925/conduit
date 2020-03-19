@@ -5,7 +5,7 @@ import "./spinner.css"
 const Spinner = () => {
   return (
     <>
-      <div class="bouncing-loader">
+      <div className="bouncing-loader">
         <div></div>
         <div></div>
         <div></div>
