@@ -61,4 +61,4 @@ const Newpost = (props) => {
   )
 }
 
-export default Newpost
+// export default Newpost
