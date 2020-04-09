@@ -217,6 +217,10 @@ body {
   color: rgb(87, 87, 87);
 }
 
+i {
+  margin-right: 0.1rem;
+}
+
 /* Login Page */
 
 .login_heading {
@@ -342,6 +346,9 @@ input:focus {
   margin-top: 1.4rem;
 }
 
+.selected {
+  color: #5c5c5c;
+}
 /* Home Main Tag */
 
 .home_main_flex {
@@ -384,6 +391,10 @@ input:focus {
 }
 .main_tag-color {
   color: white;
+}
+
+.home_main_tag:hover {
+  background: #646c73;
 }
 
 /* Article Page */

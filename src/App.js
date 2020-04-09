@@ -16,6 +16,8 @@ function Auth() {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
+      <Route path="/article/:slug" component={Article} />
+      <Route path="/tags/:name" component={Tag} />
       <Route path="/newpost" component={Newpost} />
       <Route path="/setting" component={Setting} />
       <Route path="/profile" component={Profile} />

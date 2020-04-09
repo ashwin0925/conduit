@@ -14,11 +14,11 @@ const Header = (props) => {
 
             <NavLink to="/" className="nav-bar__menu-item">Home</NavLink>
 
-            <NavLink to="/newpost" className="nav-bar__menu-item">New Post</NavLink>
+            <NavLink activeClassName="selected" to="/newpost" className="nav-bar__menu-item"><i class="far fa-edit"></i>New Post</NavLink>
 
-            <NavLink to="/setting" className="nav-bar__menu-item">Settings</NavLink>
+            <NavLink activeClassName="selected" to="/setting" className="nav-bar__menu-item"><i class="fas fa-cog"></i>Settings</NavLink>
 
-            <NavLink to="/profile" className="nav-bar__menu-item">Profile</NavLink>
+            <NavLink activeClassName="selected" to="/profile" className="nav-bar__menu-item">Profile</NavLink>
 
           </ul>) : (<ul className="flex-between">
 

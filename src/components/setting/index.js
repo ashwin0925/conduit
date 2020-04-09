@@ -5,6 +5,11 @@ class Setting extends React.Component {
   constructor() {
     super()
   }
+
+  logout = () => {
+    localStorage.clear("conduit-token");
+    this.props.history.push('/')
+  }
   render() {
     return (
       <>
@@ -32,7 +37,7 @@ class Setting extends React.Component {
         <div className="setting_border">
         </div>
 
-        <button type="submit" className="login_btn setting_logout_btn">or click here to logout.</button>
+        <button type="submit" className="login_btn setting_logout_btn" onClick={this.logout}>or click here to logout.</button>
 
       </>
     )
