@@ -35,7 +35,7 @@ const Newpost = (props) => {
         }
       })
       .catch((err) => {
-        // console.log(err);
+        console.log(err);
       });
   }
 
