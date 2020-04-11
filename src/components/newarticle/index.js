@@ -34,9 +34,9 @@ const Newpost = (props) => {
           console.log(article);
         }
       })
-    // .catch((err) => {
-    //   console.log(err);
-    // });
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   return (
